@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FB Card Autofill billing And save</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      padding: 16px;
+      width: 350px;
+    }
+    h3 {
+      text-align: center;
+      color: #1877f2;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #165fc1;
+    }
+    .links {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .links a {
+      display: block;
+      margin-top: 8px;
+      color: #1877f2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h3>FB Card Autofill billing And save</h3>
+  <input type="text" id="cardName" placeholder="Enter Name (for all cards)">
+  <textarea id="cards1" rows="4" placeholder="Card Set 1: cardNumber|MM|YYYY|CVV"></textarea>
+  <button id="fillFrom1">Decline Card</button>
+  <textarea id="cards2" rows="4" placeholder="Card Set 2: cardNumber|MM|YYYY|CVV"></textarea>
+  <button id="fillFrom2">Main Card</button>
+  <button id="reset">Reset All</button>
+    <div id="main"></div>
+  <script src="popup.js"></script>
+    <div id="main"></div>
+</body>
+</html>
